@@ -4,10 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-M29LV2KB"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NLTPWDCSZ0"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
+    gtag('config', 'G-NLTPWDCSZ0');
   </script>
   <title>Consultoria iFood e Gestão de Delivery | Wallace Lopes</title>
   <meta name="description" content="Consultoria de iFood, 99Food e Keeta em São Paulo. Gestão de cardápio, promoções e precificação para aumentar vendas e margem no delivery.">
@@ -991,6 +993,14 @@
         const parent = item.parentElement;
         parent.classList.toggle('active');
       });
+    });
+  </script>
+
+  <script>
+    document.addEventListener('click', function (e) {
+      var link = e.target.closest('a[href*="wa.me"]');
+      if (!link || typeof gtag !== 'function') return;
+      gtag('event', 'generate_lead');
     });
   </script>
 </body>
